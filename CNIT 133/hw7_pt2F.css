@@ -1,0 +1,48 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+.style {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+
+
+#comment {
+	color: red;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	margin-top: 300px;
+	text-align: center;
+	
+}

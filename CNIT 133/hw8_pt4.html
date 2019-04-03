@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 8 Part 4</title>
+		<link rel="stylesheet" type="text/css" href="hw8_pt4.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	
+		<script src="hw8_pt4.js"></script>
+
+	</head>
+	<body id="body" class="original">
+		<nav>
+			<a href="hw8.html">HW 8 Home</a>
+			<a href="hw8_pt1.html">Part 1</a>
+			<a href="hw8_pt2.html">Part 2</a>
+			<a href="hw8_pt3.html">Part 3</a>
+			<a href="hw8_pt4.html">Part 4</a>	
+		</nav>
+		
+		<h2>Homework 8 Part 4 - Retrieve State Data (Ajax + PHP)</h2>
+		<p id="description" class="descOrig">Create a webpage containing a form and an Ajax script or the jQuery $.get() method that will receive data sent from the server. The form should contain input text boxes for state code, state name, state capital and state population. Use readonly="readonly" for the state name, state capital and state population text boxes. Be sure to include a reset button. After the user enters the state code (lower case or CAPS) in the state code text box and then clicks outside this text box, the Ajax script should access a php script on the server which contains the state code (lower case or CAPS) and the corresponding state name, state capital and state population. The script should either return the corresponding state name, state capital and state population into their respective text boxes or 'state code error' into those boxes. 
+
+		</p>
+		<br>
+		<form id="myform" name="myform">
+			<table>
+				<tr>
+					<td>State Code:</td>
+					<td><input type="text" id="code" onblur="ajaxFunction(this.value);" size="32"></td>
+				</tr>
+				<tr>
+					<td>State Name:</td>
+					<td><input type="text" id="name" size="32" readonly="readonly" ></td>
+				</tr>
+				<tr>
+					<td>State Capital:</td> 
+					<td><input type="text" id="capital" size="32" readonly="readonly" ></td>
+				</tr>
+				<tr>
+					<td>State Population:</td>
+					<td><input type="text" id="population" size="32" readonly="readonly" ></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+				
+		</form>
+		
+		
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw8_pt4.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw8_pt4.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+	</body>
+</html>

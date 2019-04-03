@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 5 Part 2</title>
+		<link rel="stylesheet" type="text/css" href="hw5_pt2.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+		<script src="hw5_pt2.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<a href="hw5.html">HW 5 Home</a>
+			<a href="hw5_pt1a.html">Part 1a</a>
+			<a href="hw5_pt1b.html">Part 1b</a>
+			<a href="hw5_pt2.html">Part 2</a>
+			<a href="hw5_pt3.html">Part 3</a>
+			<a href="hw5_pt4.html">Part 4</a>	
+		</nav>
+		
+		<h2>Homework 5 Part 2 - State Data 2D Array</h2>
+		<p id="description">Given the following table of data about several of our states from the 2010 census, create a webpage that enables the user to enter a state name (full or abbreviated) and have the State Name, State Capital, and population appear in separate form text fields of the page. The user should be able to start the script by pressing the button, "State Info". Just use the states that are given in the following table for your array. Allow for the user to enter state info in either lower case or upper case letters. Note that solving this problem involves a two-dimensional array. Make sure you validate the input for a correct state abbreviation or state name. If the input is invalid then display an error message. Utilize jQuery UI for a button that will be used to display the instruction: "Enter a state abbreviation or name (lower or upper case is ok)". 
+		</p>
+		<br>
+		
+		<button id="opener">Click for instructions</button>
+
+		<div id="instructions" title="Instructions">
+		<p>Enter a state abbreviation or name (lower or upper case is ok)</p>
+		</div>
+
+		<form id="myform" name="myform">
+			
+			Enter State: <input type="text" id="stateName" size="10">
+			<p id="comment"></p>
+			
+			<input type="button" value="State Info" onclick="getStateInfo()">
+			<input type="reset" value="Reset">
+			
+			<table>
+				<tr>
+					<td>Abbrev.</td>
+					<td>Name</td>
+					<td>Capital</td>
+					<td>Population</td>
+				</tr>
+				<tr>
+					<td><input type="text" id="abbrev" size="8"></td>
+					<td><input type="text" id="name" size="8"></td>
+					<td><input type="text" id="capital" size="8"></td>
+					<td><input type="text" id="population" size="8"></td>
+				</tr>
+			</table>
+				
+		</form>
+	
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw5_pt2.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw5_pt2.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+	</body>
+</html>

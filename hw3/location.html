@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>TBA</title>
+
+</head>
+
+<body onload="show_islocationenabled();">
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="title" href="index.html">ABC Toys</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="location.html">Location</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="jumbotron">
+            <h1>TBA</h1>
+            <h3>When we open our store, we will let you know our location here even with directions from your place to it!!!</h3>
+            <p  id="str1"></p>
+        </div>
+
+       
+
+    </div>
+
+    <script>
+  
+        function get_coords(position)
+        {
+        latitude=position.coords.latitude;
+        longitude=position.coords.longitude;
+         str2= ' Latitude: '+latitude+' Longitude: '+longitude;
+        str = str1.concat(str2);
+                document.getElementsByTagName('p')[0].textContent = str;
+        }
+        
+        function if_error(err)
+        {
+        if(err.code==1){str2= ' User denied'; str = str1.concat(str2);}
+        if(err.code==2){str2= ' Position unavailable'; str = str1.concat(str2);}
+        if(err.code==3){str2= ' Time Out'; str = str1.concat(str2);}
+                document.getElementsByTagName('p')[0].textContent = str;
+        }
+        
+        function show_islocationenabled() {
+          var str = "No, geolocation is not supported.";
+    
+          if (window.navigator.geolocation) {
+            str1 = "Geolocation works! ";
+            navigator.geolocation.getCurrentPosition(get_coords,if_error);
+            
+          }
+        }
+        
+    
+      </script>
+
+
+
+
+</body>
+
+</html>

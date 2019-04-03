@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 HW 3 Part 3 - Customer Accounts</title>
+		<link rel="stylesheet" type="text/css" href="hw3_pt3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="hw3_pt3.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="hw3.html">HW 3 Home</a>
+			<a href="hw3_pt1.html">Part 1</a>
+			<a href="hw3_pt2.html">Part 2</a>
+			<a href="hw3_pt3.html">Part 3</a>
+			<a href="hw3_pt4.html">Part 4</a>
+			<a href="hw3_pt5.html">Part 5</a>
+			<a href="hw3_pt6.html">Part 6</a>
+		</nav>
+		
+		<h2>Homework 3 Part 3</h2>
+		<p id="description">Create a webpage containing a script that will determine whether a department-store customer has exceeded the credit limit on their charge account. Validate whether the account number has been entered and that the amount items are numeric. Display in a form textarea, the new balance and whether the customer has exceeded their credit limit and by how much. If the customer is at or under their credit limit then display their new balance and the message "Credit available is X", where X is the amount of their available credit. In addition, define a 'Click to change Textarea Display' button at the bottom of the form. Use jQuery to define a ready handler that defines a click event handler for the button, such that clicking the button changes the textarea results to a background color of black and changes the textarea text to a white color, large, and bold-faced.</p>
+		<br>
+		<form id="myform" name="myform">
+			<table>
+				<tr>
+					<td>Account #:</td>
+					<td><input type="text" id="account" size="12"></td>
+				</tr>
+				<tr>
+					<td>Balance at Beginning:</td>
+					<td><input type="text" id="balance" size="12"></td>
+				</tr>
+				<tr>
+					<td>Total Amnt Charged:</td>
+					<td><input type="text" id="amount" size="12"></td>
+				</tr>
+				<tr>
+					<td>Total Credit:</td>
+					<td><input type="text" id="credit" size="12"></td>
+				</tr>
+				<tr>
+					<td>Credit Limit:</td>
+					<td><input type="text" id="creditLim" size="12"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="Calculate" onclick="summary()"> <input type="reset" value="Reset"></td>
+				</tr>
+
+			</table>
+			<div id="summary">
+				Summary: <br>
+				<textarea rows="5" cols="40" id="result" name="result"></textarea>
+			</div>
+			<input id="button" type="button" value="Click to change Textarea Display">
+		</form>
+		
+		
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw3_pt3.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw3_pt3.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+		
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+		
+	</body>
+</html>

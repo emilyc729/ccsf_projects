@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 HW 4 Part 6 </title>
+		<link rel="stylesheet" type="text/css" href="hw4_pt6.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="hw4_pt6.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="hw4.html">HW 4 Home</a>
+			<a href="hw4_pt1.html">Part 1</a>
+			<a href="hw4_pt2.html">Part 2</a>
+			<a href="hw4_pt3.html">Part 3</a>
+			<a href="hw4_pt4.html">Part 4</a>
+			<a href="hw4_pt5.html">Part 5</a>
+			<a href="hw4_pt6.html">Part 6</a>
+		</nav>
+		
+		<h2>Homework 4 Part 6 - "The Twelve Days of Christmas"</h2>
+		
+		<p id="description">
+			Create a webpage that contains a script that uses repetition and switch statements to print the song "The Twelve Days of Christmas". 
+			One switch statement should be used to print the day (i.e., "First," "Second," etc.). A separate switch statement should be used to print the remainder of each verse. 
+			Use jQuery to add some animation to the page using a christmas image.
+		</p>
+		
+		<img id = "animate1" src="snowflake.png" alt="snowflake">
+		<img id = "animate2" src="snowflake.png" alt="snowflake">
+		<img id = "animate3" src="snowflake.png" alt="snowflake">
+		<img id = "animate4" src="snowflake.png" alt="snowflake">
+		<img id = "animate5" src="snowflake.png" alt="snowflake">
+		<img id = "animate6" src="snowflake.png" alt="snowflake">
+		<img id = "animate7" src="snowflake.png" alt="snowflake">
+		<img id = "animate8" src="snowflake.png" alt="snowflake">
+		<img id = "animate9" src="snowflake.png" alt="snowflake">
+		<img id = "animate10" src="snowflake.png" alt="snowflake">
+
+		<script>printSong();</script>
+		
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw4_pt6.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw4_pt6.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+		
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+		
+	</body>
+</html>

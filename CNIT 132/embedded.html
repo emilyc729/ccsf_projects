@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Embedded Style Sheet Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+body {
+     background-color: #031d47;
+     text-align:center; /* Hack for IE/Win */ 
+     }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+     
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+}
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+       
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+
+.content {
+	width:950px;
+
+	margin: 0px auto; padding: 10px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	
+	background-color:#eee;
+         }    
+
+
+
+.pol { 
+	 text-align: center;
+         font-size: 24px;
+	   }
+
+
+h1 {
+
+font:  32pt arial;
+color: #d80a48;
+text-align: center;
+}
+
+
+h2 {
+
+font:  24pt arial;
+color: #0a9cd1;
+text-align: left;
+}
+
+
+h3 {
+
+font-family: calibri;
+font-size: 20pt;
+color: #0000ff;
+text-align: center;
+}
+
+h4 {
+
+font-family: impact;
+font-size: 20pt;
+color: #ff00ff;
+text-align: center;
+}
+
+
+p.left  {
+
+font-family: calligrapher;
+font-size: 12pt; 
+color: #954df9;
+text-align: center;
+font-weight: bold;
+text-indent: 1in;
+}
+
+
+p.right  {
+
+font-family: jester, helvetica, san-serif;
+font-size: 8pt; 
+color: #1cc939;
+text-align: right;
+background-color: #0a3800;
+border-style: solid;
+border-color: #171c5b;
+padding: 3em;
+}
+
+p.ital  {
+
+font-family: 'Cuckoo';
+font-size: 14pt;
+color: #f77a0c;
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+p.new {
+	font-family: 'comic sans ms';
+	font-size: 12pt; 
+	color: #000000;
+	text-align: center;
+	background-color: #24ccd8;
+	border-style: solid;
+	border-color: white;
+	padding: 1em;
+}
+
+a {
+
+color: lightblue; 
+text-decoration: none;
+}
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+#linked {
+	color: white;
+}
+</style>
+
+</head>
+
+
+<body>
+
+	<nav class="navbar navbar-inverse navbad-top-fixed">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" id="title" href="#">Emily's Website</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li><a href="hw2.html">Homework 2</a></li>
+			<li><a href="embedded.html">Embedded</a></li>
+			<li><a href="linked1.html">Linked 1</a></li>
+			<li><a href="linked2.html">Linked 2</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+<div class="content">
+
+<section>
+
+
+
+
+<br>
+
+<h1>Embedded Style Sheet Example</h1>
+
+
+<p class="pol">The politics of the 21st century</p>
+
+<h2>Lefties and Righties</h2>
+
+
+<p class="left">
+
+Socialists are to the left of liberals.
+ Most liberals are Democrats, although some have
+wandered over to the Green party. Republicans are right-wingers. 
+Most Republicans are 
+conservative. What does conservative mean? Do they want to
+conserve the environment? Do they want to conserve the 2nd amendment?
+Do they want to conserve a woman's right to choose an abortion?
+ Do they want to conserve a separation between church and state?
+
+<a href="http://www.microsoft.com">Click here</a>
+for Bill Gates.</p>
+
+
+<h3>San Francisco Giants</h3>
+
+<p class="right">
+
+It may just be that the Giants have seen the last of Hunter Pence this season, and what a 
+loss it will be. Pence is not only the offensive catalyst, but his presence both on the 
+field and in the clubhouse is immense. Right now, the right fielder has been relegated to 
+the dugout, and that may not change any time soon as he re-injured his surgically repaired hamstring muscle a few days ago. 
+The Giants are now just one game behind the first-place Dodgers in the National League West entering the games of Aug. 27. 
+
+<a href="http://www.sfgiants.com">Click here</a> for your 
+San Francisco Giants!
+</p>
+
+<h4>Personal Responsibility</h4>
+
+<p class="ital">
+The name of the game is personal responsibility. That means that you
+just need to take care of yourself and not
+care about things like community involvement, poor people, or 
+the obscene gap between the rich and poor in this country.
+</p>
+
+<p class="new">
+	This class is CNIT 132.  I am currently learning CSS, Cascading Style Sheet, in this class.  I am taking this class to complete the web development certificate.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+
+<a id="linked" href="linked1.html">Linked 1</a>
+
+<p class="center">
+ 
+ 
+<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit132/embedded.html">
+<img style="border:0;width:88px;height:31px" src="HTML5.gif"
+alt="HTML5"></a>
+
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+    </a>
+</p>
+
+
+</footer>
+
+</body>
+</html>

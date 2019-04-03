@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 HW 4 Part 2 </title>
+		<link rel="stylesheet" type="text/css" href="hw4_pt2.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="hw4_pt2.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="hw4.html">HW 4 Home</a>
+			<a href="hw4_pt1.html">Part 1</a>
+			<a href="hw4_pt2.html">Part 2</a>
+			<a href="hw4_pt3.html">Part 3</a>
+			<a href="hw4_pt4.html">Part 4</a>
+			<a href="hw4_pt5.html">Part 5</a>
+			<a href="hw4_pt6.html">Part 6</a>
+		</nav>
+		
+		<h2>Homework 4 Part 2 - Employee Gross Pay</h2>
+		<p id="description">Create a webpage that contains a script that will determine the gross pay for each of six employees. The company pays "straight time" for the first 40 hours worked by each employee and pays "time and a half" for all hours worked in excess of 40 hours. You are given a list of the employees of the company, the number of hours worked last week and the hourly rate of each employee. Your script should input this information for each employee, determine the employee's gross pay and then displays the employee's gross pay. Be sure to round the outputted results to 2 decimal places. You should also check for valid input and right-justify all amounts. Use form text boxes to input the data.
+		</p>
+		<br>
+		
+		<form id="myform" name="myform">
+			<table>
+				<tr>
+					<th>Employee</th>
+					<th>Hours Worked</th>
+					<th>Hourly Rate</th>
+					<th>Gross Pay</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><input type="text" id="hours1" size="10"></td>
+					<td><input type="text" id="rate1" size="10"></td>
+					<td><input type="text" id="pay1" size="10"></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><input type="text" id="hours2" size="10"></td>
+					<td><input type="text" id="rate2" size="10"></td>
+					<td><input type="text" id="pay2" size="10"></td>
+				</tr>
+				<tr>
+					<td>3</td> 
+					<td><input type="text" id="hours3" size="10"></td>
+					<td><input type="text" id="rate3" size="10"></td>
+					<td><input type="text" id="pay3" size="10"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><input type="text" id="hours4" size="10"></td>
+					<td><input type="text" id="rate4" size="10"></td>
+					<td><input type="text" id="pay4" size="10"></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><input type="text" id="hours5" size="10"></td>
+					<td><input type="text" id="rate5" size="10"></td>
+					<td><input type="text" id="pay5" size="10"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td><input type="text" id="hours6" size="10"></td>
+					<td><input type="text" id="rate6" size="10"></td>
+					<td><input type="text" id="pay6" size="10"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input type="button" value="Calculate" onclick="grossPay()"> <input type="reset" value="Reset"></td>
+					<td></td>
+				</tr>
+
+			</table>
+		</form>
+		
+		
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw4_pt2.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw4_pt2.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+		
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+		
+	</body>
+</html>

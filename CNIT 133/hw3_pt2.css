@@ -1,0 +1,73 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+form {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+}
+
+table td, table th {
+	padding: 8px;
+	text-align: left;
+	
+}
+
+input {
+	text-align: right;
+}
+table {
+	float: left;
+}
+#table2 {
+	float: left;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+#comment {
+	color: red;
+	margin-left: 10px;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	clear: both;
+	padding-top: 20px;
+}

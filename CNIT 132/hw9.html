@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CNIT 132 Homework 9</title>
+		<link rel="stylesheet" type="text/css" href="hw9.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<script src="hw9.js"></script>
+	</head>
+	
+	<body onload="writeMsg();" onunload="stopTimer();">
+	
+		<nav class="navbar navbar-inverse navbad-top-fixed">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" id="title" href="#">Emily's Website</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="index.html">HW 1</a></li>
+				<li><a href="hw2.html">HW 2</a></li>
+				<li><a href="hw3.html">HW 3</a></li>
+				<li><a href="hw4.html">HW 4</a></li>
+				<li><a href="hw5.html">HW 5</a></li>
+				<li><a href="hw6.html">HW 6</a></li>
+				<li><a href="hw7.html">HW 7</a></li>
+				<li><a href="hw8.html">HW 8</a></li>
+				<li><a href="hw9.html">HW 9</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+		<h1>Homework 9 - Javascript</h1>
+		
+		<br>
+		
+		<span id="growText">I'm getting bigger~~</span>
+		
+		<br><br>
+		
+		<a class="alertMsg" href="#" onclick="alertMsg()">Click for alert msg</a>
+		
+		<br><br>
+		
+		<form name="myform">
+			<p><strong>Please guess a number between 1 and 5:</strong></p>
+			<input type="text" id="num1" size="10">
+		
+			<input type="button" onclick="check()" value="SUBMIT">
+			<input type="reset" value="RESET">
+			
+		</form>
+		
+		<br><br>
+		
+		<img src="image1.jpg" alt="ice cream" id="icecream" onmouseover="switchImage()" onmouseout="restoreImage()" >
+		
+		<br><br>
+		
+		<form name="myform">
+			Choose a homework page that I've created:
+			<select name="dest">
+				<option selected="selected" value="h9x.html">--------Pick a Webpage--------</option>
+				<option value="https://hills.ccsf.edu/~echeun17/cnit132/hw3.html">Homework 3</option>
+				<option value="https://hills.ccsf.edu/~echeun17/cnit132/hw5.html">Homework 5</option>
+				<option value="https://hills.ccsf.edu/~echeun17/cnit132/hw6.html">Homework 6</option>
+			</select>
+
+			<input type="button" value="Go!" onclick="surfto(this.form)" />
+
+		</form>
+		
+		<br>
+		
+		<a class="popUp" href="#" onclick="new_window('popup.html')">Pop-up Window containing webpage</a>
+		
+		<br><br>
+		
+		<a class="pwPage" href="#" onclick="new_window('pwPage.html')">Password Protection Page</a>
+
+		<br><br>
+		<p id="fadeText">Watch me fade~</p>
+		<button type="button" id="fading">Click to fade text</button>
+		
+		<br>
+		
+		<footer class="footer navbar-fixed-bottom">
+		  <div class="container-fluid">
+			<a class="email" href="mailto:echeun17@mail.ccsf.edu">Email Me</a>
+				<p class="validation">
+					<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit132/hw9.html">
+						<img class="html5" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+					</a>
+				</p>
+				<p class="validation">
+					<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit132%2Fhw9.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+						<img style="border:0;width:88px;height:31px"
+							src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+							alt="Valid CSS!" />
+					</a>
+				</p>
+				<p class="update">
+					<script>
+						var dateModified = document.lastModified;
+						mydate = dateModified.slice(0,16);
+						document.write("Last updated: " + mydate);
+					</script>
+				</p>
+		  </div>
+		</footer>
+
+		
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.panel-heading .accordion-toggle:after {
+
+    font-family: 'Glyphicons Halflings';  
+    content: "\e086";  
+    float: right;       
+    color: grey;       
+}
+.panel-heading .accordion-toggle.collapsed:after {
+  
+    content: "\e086"; 
+}
+
+.jumbotron {
+    background-color: white;
+    margin-top: 30px;
+}
+
+.navbar {
+    box-shadow: 0px 1px 0px 1px rgba(62, 62, 62, 0.2);
+    
+}
+#title {
+	color: white;
+}
+

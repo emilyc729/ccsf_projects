@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 7</title>
+		<link rel="stylesheet" type="text/css" href="hw7.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<script src="hw7.js"></script>
+		
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="hw2.html">HW 2</a>
+			<a href="hw3.html">HW 3</a>
+			<a href="hw4.html">HW 4</a>
+			<a href="hw5.html">HW 5</a>
+			<a href="hw6.html">HW 6</a>
+			<a href="hw7.html">HW 7</a>
+			<a href="hw8.html">HW 8</a>
+		</nav>
+		
+		<h2>Homework 7 - Object Model and Miscellaneous jQuery</h2>
+		
+		<div id="accordion">
+			<p>Part 1</p>
+			<div>
+				<p>Create a webpage in which users are allowed to select a page layout and formatting through the use of the className property. Choose at least three form elements from among radio buttons, select items, checkboxes, and buttons to allow the user to change the background color, font size, font family, font style, and font weight. You may use JavaScript or jQuery for this.</p>
+				<a href="hw7_pt1.html">Part 1</a>
+			</div>
+			<p>Part 2</p>
+			<div>
+				<p>Create a page that has a header of Password Protection Page, a form password element, and submit and reset buttons. Use jQuery to allow user to click on a login button which brings up password prompt. Use an input type="password". If password entered is incorrect display "password is incorrect" and remain on page (javascript/php).If password is correct, allow entrance to a second page containing three hotspot labels, "Stop", "Caution", and "Go". When the user mouses over the "Stop" hotspot, the background color of the browser window should turn red. When the user mouses over the "Caution" hotspot, the background color should turn yellow. When the user mouses over the "Go" hotspot, the background color should turn green. When the user mouses off of any of these hotspots, return the background color to the original color of the browser window.</p>
+				<a href="hw7_pt2.html">Part 2</a>
+			</div>
+			<p>Part 3</p>
+			<div>
+				<p>Write a script that displays a top navigation bar containing a link to your Homework 1 and five other links that will be to the cover page for each of your Homework2 - Homework6. When you mouseover any of these other links then display a drop-down menu that contains the links of their homework parts (part 1 - 4 or part 1 - 6). If applicable then also include links to any extra credit pages that you have done. Make sure that all links are working. You can use strictly JavaScript or else jQuery.</p>
+				<a href="hw7_pt3.html">Part 3</a>
+			</div>
+			<p>Part 4</p>
+			<div>
+				<p>Create a photo slide-show using jQuery.</p>
+				<a href="hw7_pt4.html">Part 4</a>
+			</div>
+		</div>
+		
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw7.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw7.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 5 Part 1b</title>
+		<link rel="stylesheet" type="text/css" href="hw5_pt1b.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="hw5_pt1b.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<a href="hw5.html">HW 5 Home</a>
+			<a href="hw5_pt1a.html">Part 1a</a>
+			<a href="hw5_pt1b.html">Part 1b</a>
+			<a href="hw5_pt2.html">Part 2</a>
+			<a href="hw5_pt3.html">Part 3</a>
+			<a href="hw5_pt4.html">Part 4</a>	
+		</nav>
+		
+		<h2>Homework 5 Part 1b - Onchange + Onclick handlers</h2>
+		<p id="description">Part 1b: Create a 2nd webpage that contains a script that utilizes 2 pulldown menus. The first one should utilize an onchange event handler. The second should utilize a button with an onclick event handler to navigate to a page after an option is selected. Each pulldown menu should include at least 3 URL destinations. You could put the link for Part B at the bottom of the Part A page or simply have 2 links (Part A and Part B) on the cover page.
+		</p>
+		<br>
+		<form id="myform" name="myform">
+			<select name="choice1" onchange="goToPage(this.form);">
+				<option>--Choose a Website--</option>
+				<option value="https://www.google.com/">Google</option>
+				<option value="https://www.facebook.com/">Facebook</option>
+				<option value="https://www.youtube.com/">Youtube</option>
+			</select>
+			<br><br>
+			<select name="choice2" onclick="">
+				<option>--Choose a Website--</option>
+				<option value="https://www.google.com/">Google</option>
+				<option value="https://www.facebook.com/">Facebook</option>
+				<option value="https://www.youtube.com/">Youtube</option>
+			</select>
+			<br><br>
+			<input type="button" value="Go" onclick="goToPage(this.form);">
+		</form>
+	
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw5_pt1b.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw5_pt1b.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+	</body>
+</html>

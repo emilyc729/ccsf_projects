@@ -1,0 +1,14 @@
+
+<div *ngIf="event" [ngStyle]="{'background-color': setColor()}"> 
+  <h2>{{ event.name }} Details</h2>
+  <div>ID: {{event.id}}</div>
+  <div>
+    Name: {{event.name}}
+  </div>
+  <div>Flag: {{event.flag}}</div>
+  <div>Description: {{event.summary}}</div>
+  <div>Room#: {{event.room}}</div>
+  <div>Presenter: {{event.presenter}}</div>
+  <button (click)="goBack()">BACK</button>
+</div>
+

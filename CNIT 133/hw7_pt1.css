@@ -1,0 +1,109 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+	
+.original {
+	background-color: lightblue;
+	font-family: Calibri;
+	font-size: 16px;
+}	
+nav {
+	font-family: arial, sans-serif;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: justify;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.descOrig {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#myform {
+	text-align: left;
+	margin-left: 150px;
+	
+	border: none;
+}
+
+th{
+    padding: 10px;
+	background-color: #99CCFF ;
+    color: black;
+}
+td {
+    padding: 10px;
+	background-color: #C8C8C8;
+    color: #000099;
+}
+
+.purple {
+	background-color: #C89BFF;
+}
+.pink {
+	background-color: #FF9ED4;
+}
+.orange {
+	background-color: #FFD386;
+}
+
+.small {
+    font-size: 10px;
+}	
+.medium {
+    font-size: 18px;
+}
+.large {
+    font-size: 26px;
+}
+
+.comic {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.arialF {
+	font-family: arial, sans-serif;
+}
+.verdanaF {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+input {
+	text-align: right;
+}
+
+#comment {
+	color: red;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	margin-top: 60px;
+	text-align: center;
+	
+}

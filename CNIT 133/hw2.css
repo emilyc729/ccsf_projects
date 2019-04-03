@@ -1,0 +1,67 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+caption {
+	padding: 10px;
+	border: 2px solid darkgrey;
+	border-bottom: none;
+}
+td, th {
+	border: 2px solid darkgrey;
+	text-align: left;
+	padding: 10px;
+}
+
+td a {
+	color: black;
+	text-decoration: none;
+}
+
+td a:hover {
+	color: #737373;
+	
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

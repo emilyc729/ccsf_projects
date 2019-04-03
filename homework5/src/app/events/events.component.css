@@ -1,0 +1,105 @@
+h1 {
+  color: #24486d;
+}
+
+h2, h3 {
+  color: #252525;
+}
+
+body {
+  margin: 2em;
+}
+
+body, input[text], button {
+  color: #666;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+}
+
+button {
+  background-color: #cbcbcb;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+button:hover {
+  background-color: #e5ccef;
+}
+
+button:disabled {
+  background-color: #cbcbcb;
+  color: #525252;
+  cursor: auto;
+}
+
+nav a {
+  padding: 7px;
+  text-decoration: none;
+  margin: 10px 10px 0 0;
+  display: inline-block;
+  background-color: #cbcbcb;
+  border-radius: 5px;
+}
+
+nav a:visited, a:link {
+  color: #554650;
+}
+
+
+
+.events {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 20em;
+}
+.events li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #ddd;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 5px;
+}
+a:hover {
+  background-color: #bdf8d0 !important;
+  color: blue;
+}
+
+a:visited {
+  color: #554650;
+}
+.events li:hover {
+  background-color: #bdf8d0 !important;
+  color: blue;
+  left: .1em;
+}
+.events .text {
+  position: relative;
+  top: -3px;
+}
+.events .eventid {
+  display: inline-block;
+  font-weight: bold;
+  font-size: small;
+  color: blue;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #aabbff;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 5px 0 0 5px;
+}

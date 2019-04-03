@@ -1,0 +1,19 @@
+body {
+    color: darkgray;
+}
+h2 {
+    color: purple;
+    font-family: Verdana;
+}
+button {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: beige;
+    color: black;
+}
+
+div {
+    padding-left: 10px;
+    padding-right: 10px;
+}

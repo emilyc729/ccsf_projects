@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 7 Part 2</title>
+		<link rel="stylesheet" type="text/css" href="hw7_pt2F.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+		<script src="hw7_pt2F.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="hw7.html">HW 7 Home</a>
+			<a href="hw7_pt1.html">Part 1</a>
+			<a href="hw7_pt2.html">Part 2</a>
+			<a href="hw7_pt3.html">Part 3</a>
+			<a href="hw7_pt4.html">Part 4</a>	
+		</nav>
+		
+		<h2>Homework 7 Part 2 - Hotspot Labels</h2>
+		<br><br>
+		<label class="style" id="stop" onmouseover="mouseStop()" onmouseout="normal()">STOP</label> 
+		
+		<label class="style" id="caution" onmouseover="mouseCaution()" onmouseout="normal()">CAUTION</label>
+		
+		<label class="style" id="go" onmouseover="mouseGo()" onmouseout="normal()">GO</label>
+		
+	
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw7_pt2F.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw7_pt2F.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+	</body>
+</html>

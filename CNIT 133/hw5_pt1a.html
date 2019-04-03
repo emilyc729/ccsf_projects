@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CNIT 133 Homework 5 Part 1a</title>
+		<link rel="stylesheet" type="text/css" href="hw5_pt1a.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="hw5_pt1a.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<a href="hw5.html">HW 5 Home</a>
+			<a href="hw5_pt1a.html">Part 1a</a>
+			<a href="hw5_pt1b.html">Part 1b</a>
+			<a href="hw5_pt2.html">Part 2</a>
+			<a href="hw5_pt3.html">Part 3</a>
+			<a href="hw5_pt4.html">Part 4</a>
+			
+		</nav>
+		
+		<h2>Homework 5 Part 1a - Form Validation</h2>
+		<p id="description">Part 1a: Create a webpage containing a form that displays an input text box, radio buttons, checkboxes, and select items; along with a script that executes form validation. Your script should validate whether the user has entered data in the input text box, has checked a radio button, has checked at least one checkbox, and has selected an option from the select items. Use a submit button to invoke the validation script, so that the form is processed only when the form fields are valid. If a field is invalid then display a message to the user. In your form statement, use method="post" and an action that can be a mailto or a webpage(displaying that the form has been processed), but be sure to use input type="submit" for your submit button. Alternatively you can leave out the form's action and method, but then you should use an input type="button", along with displaying any appropriate messages. 
+		</p>
+		<br>
+		<form id="myform" name="myform">
+			Input Text: <input type="text" id="textInput" size="10">
+			<br><br>
+			<input type="radio" name="question" value="yes"> Yes<br>
+			<input type="radio" name="question" value="no"> No<br>
+			<br>
+			<input type="checkbox" name="check" value="1">1<br>
+			<input type="checkbox" name="check" value="2">2<br>
+			<input type="checkbox" name="check" value="3">3<br>
+			<br>
+			<select name="choice" id="choice">
+				<option value="choose">Please Select</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+			<br><br>
+			<input type="button" value="Submit" onclick="validate()">
+			<input type="reset" value="Reset">
+			
+			<p id="comment"></p>
+			<p class="error" id="errorMsg1"></p>
+			<p class="error" id="errorMsg2"></p>
+			<p class="error" id="errorMsg3"></p>
+			<p class="error" id="errorMsg4"></p>
+		</form>
+	
+		<footer>
+			<p class="validation">
+				<a href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~echeun17/cnit133/hw5_pt1a.html">
+					<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<p class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eecheun17%2Fcnit133%2Fhw5_pt1a.css&profile=css3&usermedium=all&warning=1&vextwarning=">
+					<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
+			
+			<p id="update"></p>
+			
+		</footer>
+	
+		<script>
+			document.getElementById("update").innerHTML = "Last Updated: " + document.lastModified;
+		</script>
+	</body>
+</html>

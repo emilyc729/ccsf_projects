@@ -1,0 +1,59 @@
+body {
+	background-color: lightblue;
+	padding: 10px 60px 0px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+nav {
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#accordion {
+	width: 800px;
+	text-align: justify;
+}
+#part {
+	text-align: left;
+	border: 1px solid grey;
+	padding: 4px;
+}
+
+#style {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#style a {
+	color: purple;
+	text-decoration: none;
+}
+
+#style a:hover {
+	color: #737373;
+	
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	margin-top: 60px;
+	text-align: center;
+	
+}

@@ -1,0 +1,124 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+#animate1 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 150px;
+}
+
+#animate2 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 260px;
+}
+
+#animate3 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 370px;
+}
+#animate4 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 480px;
+}
+#animate5 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 590px;
+}
+#animate6 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 700px;
+}
+#animate7 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 810px;
+}
+#animate8 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 920px;
+}
+#animate9 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 1030px;
+}
+#animate10 {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -300px;
+	left: 1140px;
+}
+
+
+#day {
+	color: red;
+}
+
+#style {
+	text-align: left;
+	padding-left: 150px;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	padding-top: 60px;
+	text-align: center;
+}

@@ -1,0 +1,134 @@
+body {
+	background-color: lightblue !important;
+	text-align: center;
+}
+.navbar {
+	box-shadow: 0px 1px 0px 1px rgba(62, 62, 62, 0.2);
+}
+#title {
+	color: white;
+}
+
+h3 {
+	text-align: left;
+	padding-left: 300px;
+	color: #cc00cc;
+}
+
+#gif1 {
+	height: 80px;
+	width: 120px;
+	
+}
+.style {
+	text-align: left;
+	margin-left: 300px;
+}
+
+#animate {
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-name: moving;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	
+	-moz-animation-duration: 7s;
+	-moz-animation-name: moving;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+}
+
+@-webkit-keyframes moving {
+	0% {
+		left: 0px;
+		top: 0px;
+		color: orange;
+	}
+
+	50% {
+		left: 500px;
+		top: 0px;
+		color: blue;
+	}
+	
+	100% {
+		left: 0px;
+		top: 0px;
+		color: red;
+	}
+
+}
+
+@-moz-keyframes moving {
+	0% {
+		left: 0px;
+		top: 0px;
+		color: orange;
+	}
+
+	50% {
+		left: 500px;
+		top: 0px;
+		color: blue;
+	}
+	
+	100% {
+		left: 0px;
+		top: 0px;
+		color: red;
+	}
+}
+
+video{
+	height: 180px;
+	width: 300px;
+}
+
+#frame {
+	text-align: left;
+	padding-left: 300px;
+}
+
+#frame a {
+	color: black;
+	text-decoration: none;
+}
+
+#frame a:hover {
+	color: grey; 
+}
+
+iframe {
+	margin-bottom: 100px;
+	height: 304px;
+	width: 244px;
+}
+
+.footer {
+	text-align: center;
+	padding-top: 15px;
+	background-color: black;
+}
+
+.email {
+	padding-right: 80px;
+	color: white;
+}
+
+.validation {
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.update {
+	display: inline-block;
+	padding-left: 50px;
+	color: white;
+}
+
+.html5 {
+	width: 40px; 
+	height: 41px;
+}

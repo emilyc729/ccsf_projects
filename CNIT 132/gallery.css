@@ -1,0 +1,47 @@
+body {
+	background-color: lightblue !important;
+}
+
+.navbar {
+	box-shadow: 0px 1px 0px 1px rgba(62, 62, 62, 0.2);
+}
+
+#title {
+	color: white;
+}
+
+.caption {
+	text-align: center;
+	margin-bottom: -15px;
+	
+}
+.photo {
+	margin-bottom: 100px;
+}
+.footer {
+	text-align: center;
+	padding-top: 15px;
+	background-color: black;
+	margin-top: 15px;
+}
+
+.email {
+	padding-right: 80px;
+	color: white;
+}
+
+.validation {
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.update {
+	display: inline-block;
+	padding-left: 50px;
+	color: white;
+}
+
+.html5 {
+	width: 40px; 
+	height: 41px;
+}

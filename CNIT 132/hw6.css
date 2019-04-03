@@ -1,0 +1,133 @@
+body {
+	background-image: URL('icecream.jpg');
+	background-repeat: repeat-y;
+	background-color: lightblue !important;
+	padding:0;
+	margin:0;
+	
+	text-align: center;
+
+}
+.navbar {
+	box-shadow: 0px 1px 0px 1px rgba(62, 62, 62, 0.2);
+}
+#title {
+	color: white;
+}
+
+#head {
+	text-shadow: 3px 2px 2px white;
+	font-size: 40px;
+	font-family: 'Lobster', cursive;
+}
+#gelato {
+	position: absolute;
+	top: 80px;
+	right: 310px;
+	z-index: 3;
+	-ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
+
+}
+
+#popsicle {
+	position: absolute;
+	top: 70px;
+	right: 200px;
+	z-index: 2;
+	-ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+
+#text1 {
+	margin-top: 30px;
+	margin-left: 180px;
+	width: 450px;
+	text-align: justify;
+	float: left;
+}
+#text2 {
+	position: absolute;
+	left: 650px;
+	margin-top: 30px;
+	width: 350px;
+	text-align: justify;
+	
+	
+}
+#info {
+	color: purple;
+}
+#info:hover {
+	color: red;
+	text-decoration: none;
+}
+
+caption {
+	font-weight: bold;
+	color: black !important;
+	text-align: center !important;
+	border: dashed 2px white;
+	margin: 5px;
+	border-radius: 15px;
+	
+}
+#table1 {
+	position: absolute;
+	left: 1010px;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: solid 1px orange;
+}
+
+#table1 th, td {
+	padding: 5px;
+	border: solid 1px orange;
+}
+
+#table2 {
+	position: absolute;
+	left: 1010px;
+	top: 330px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: solid 1px orange;
+	
+}
+
+#table2 th, tr, td{
+	padding: 5px;
+	text-align: center;
+	border: solid 1px orange;
+}
+
+
+.footer {
+	text-align: center;
+	padding-top: 15px;
+	background-color: black;
+}
+
+.email {
+	padding-right: 80px;
+	color: white;
+}
+
+.validation {
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.update {
+	display: inline-block;
+	padding-left: 50px;
+	color: white;
+}
+
+.html5 {
+	width: 40px; 
+	height: 41px;
+}

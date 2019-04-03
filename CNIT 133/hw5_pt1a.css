@@ -1,0 +1,72 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+#myform {
+	text-align: left;
+	margin-left: 150px;
+	background-color: lightblue;
+	width: 250px;
+	border: none;
+}
+
+
+table {
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+
+
+input {
+	text-align: right;
+}
+
+.error {
+	color: red;
+}
+
+#comment {
+	color: red;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	margin-top: 60px;
+	text-align: center;
+	bottom: 0;
+	
+}

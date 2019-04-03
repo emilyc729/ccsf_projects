@@ -1,0 +1,65 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+	font-family: Calibri;
+}
+		
+nav {
+	font-family: arial, sans-serif;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: justify;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+#myform {
+	text-align: left;
+	margin-left: 150px;
+	
+	border: none;
+}
+
+
+td {
+    padding: 10px;
+    color: #000099;
+}
+
+
+input {
+	text-align: right;
+}
+
+#comment {
+	color: red;
+}
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	position:absolute;
+   bottom:0;
+   width:100%;
+	text-align: center;
+	
+}

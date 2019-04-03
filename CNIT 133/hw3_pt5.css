@@ -1,0 +1,65 @@
+body {
+	background-color: lightblue;
+	padding: 20px 60px 10px 60px;
+	text-align: center;
+}
+			
+nav {
+	font-family: arial, sans-serif;
+	background-color: lightblue;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: white;
+}
+
+#description {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+form {
+	text-align: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+table td, table th {
+	padding: 5px;
+	text-align: left;
+	
+}
+
+input {
+	text-align: right;
+}
+
+#degree {
+	color: red;
+	font-weight: bold;
+}
+
+
+.validation {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
